@@ -1,0 +1,23 @@
+// utils
+@import "../../utils/mixins.scss";
+@import "../../utils/fonts.scss";
+@import "../../utils/variables.scss";
+@import "../../utils/null.scss";
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 1 auto;
+	height: 1500px; // добавил высоту, чтобы проверить как работает ускорение текста при прокрутке
+}
+
+//common
+@import "_logo.scss";
+@import "_burger.scss";
+@import "_runline.scss";

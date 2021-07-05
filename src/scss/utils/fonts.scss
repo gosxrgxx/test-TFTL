@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "Gtrsk";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+		url("../fonts/Grtsk-Tera-Regular.woff2") format("woff2"),
+		url("../fonts/Grtsk-Tera-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Gtrsk";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+		url("../fonts/Grtsk-Tera-Bold.woff2") format("woff2"),
+		url("../fonts/Grtsk-Tera-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Gtrsk";
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: local(''),
+		url("../fonts/Grtsk-Tera-SemiBold.woff2") format("woff2"),
+		url("../fonts/Grtsk-Tera-SemiBold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Gtrsk";
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+	src: local(''),
+		url("../fonts/Grtsk-Tera-SemiBold-Italic.woff2") format("woff2"),
+		url("../fonts/Grtsk-Tera-SemiBold-Italic.woff") format("woff");
+}

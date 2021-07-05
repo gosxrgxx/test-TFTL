@@ -1,0 +1,54 @@
+$width-svg: 2392px; // ширина svg-изображения
+
+.runline {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-30deg);
+	opacity: 0.12;
+
+	background-image: url(../img/icons/runline.svg);
+	background-repeat: repeat-x;
+	width: 200%;
+	height: 50px;
+	animation: runline 20s linear infinite;
+
+	&--mirror {
+		top: 55%;
+		transform: translate(-50%, -50%) rotate(150deg);
+	}
+
+	@include max-w($laptop) {
+		transform: translate(-50%, -50%) rotate(-36deg);
+
+		&--mirror {
+			transform: translate(-50%, -50%) rotate(144deg);
+		}
+	}
+
+	@include max-w($tablet) {
+		transform: translate(-50%, -50%) rotate(-53deg);
+		background-size: ($width-svg / 1.5);
+		top: 47%;
+
+		&--mirror {
+			transform: translate(-50%, -50%) rotate(127deg);
+			top: 51%;
+		}
+	}
+
+	@include max-w($mobile) {
+		transform: translate(-50%, -50%) rotate(-61deg);
+		background-size: ($width-svg / 2);
+
+		&--mirror {
+			transform: translate(-50%, -50%) rotate(119deg);
+		}
+	}
+}
+
+@keyframes runline {
+	to {
+		background-position: $width-svg 0px;
+	}
+}

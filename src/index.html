@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+		"title": "test-TFTL"
+	})
+<body>
+	<div style="display:none">
+		@@include('_svgsprite.html')
+	</div>
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="content">
+			<section class="fullscreen">
+
+				<div class="fullscreen__runline runline"></div>
+				<div class="fullscreen__runline runline runline--mirror"></div>
+
+				<div class="fullscreen__ellipse">
+					<div class="fullscreen__ellipse-icon"></div>
+					<svg class="fullscreen__rotate-icon">
+						<use xlink:href="#show"></use>
+					</svg>
+				</div>
+
+				<div class="fullscreen__title-wrap">
+					<h1 class="fullscreen__title">
+						full-cycle <br>
+						event agency
+					</h1>
+				</div>
+
+				<nav class="fullscreen__nav burger-nav">
+					<ul class="fullscreen__list">
+						<li class="fullscreen__item">
+							<a href="#" class="fullscreen__link">where?</a>
+						</li>
+						<li class="fullscreen__item">
+							<a href="#" class="fullscreen__link">who?</a>
+						</li>
+						<li class="fullscreen__item">
+							<a href="#" class="fullscreen__link">what?</a>
+						</li>
+					</ul>
+				</nav>
+
+			</section>
+		</main>
+	</div>
+	@@include('_js.html')
+</body>
+</html>
