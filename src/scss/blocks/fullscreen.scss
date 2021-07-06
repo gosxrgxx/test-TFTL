@@ -31,14 +31,17 @@
 		}
 	}
 
-	&__rotate-icon {
+	&__rotate-text {
 		position: absolute;
 		bottom: 3%;
 		right: 5%;
 		z-index: 3;
+		animation: rotate-icon 20s linear infinite;
+	}
+
+	&__rotate-icon {
 		width: 118px;
 		height: 118px;
-		animation: rotate-icon 20s linear infinite;
 
 		@include max-w($laptop) {
 			width: 112px;
